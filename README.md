@@ -2,6 +2,12 @@
 
 https://github.com/gasus/transliterator
 
+# Install
+
+```
+npm i -D  @gasu/transliterator
+```
+
 # Import
 
 ```
