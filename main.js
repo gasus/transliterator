@@ -9,7 +9,7 @@ const copyBtn = document.querySelector("#copy");
 
 const changeOutput = () => {
   output.value = transliteration({ text: input.value, mode: MODE });
-  copyBtn.disabled = !output.value.length;
+  copyBtn.style.visibility = output.value.length ? "visible" : "hidden";
 };
 
 select.addEventListener("change", () => {
@@ -23,9 +23,9 @@ input.addEventListener("input", () => {
 
 copyBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(output.value);
+  copyBtn.style.visibility = "hidden";
 });
 
 window.onload = () => {
   select.value = MODE;
-  copyBtn.disabled = true;
 };

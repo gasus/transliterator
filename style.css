@@ -19,7 +19,8 @@ body {
 .select-wrapper,
 .button-wrapper {
   width: 500px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .select-wrapper select {
@@ -34,11 +35,7 @@ body {
   border-radius: 5px;
   background-color: #b5ffa8;
   cursor: copy;
-}
-
-.button-wrapper button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+  visibility: hidden;
 }
 
 .text-area-wrapper {
@@ -63,11 +60,9 @@ select:focus-visible,
   outline: none;
 }
 
-@media (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #00ff08;
+@media (max-width: 800px) {
+  .wrapper {
+    justify-content: flex-start;
   }
 
   .select-wrapper,
@@ -77,11 +72,17 @@ select:focus-visible,
 
   .text-area-wrapper {
     width: 100%;
-    height: 40%;
+    height: 20%;
   }
 
   .text-area-wrapper textarea {
     width: 100%;
     height: 100%;
+  }
+
+  .select-wrapper select,
+  .text-area-wrapper textarea,
+  .button-wrapper button {
+    font-size: 20px;
   }
 }
