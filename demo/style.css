@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8e8e8;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.select-wrapper {
+  width: 500px;
+  text-align: right;
+}
+
+.select-wrapper select {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.text-area-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.text-area-wrapper textarea {
+  width: 500px;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 1.2;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+select:focus-visible,
+.text-area-wrapper textarea:focus-visible {
+  outline: none;
+}
