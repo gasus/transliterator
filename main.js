@@ -1,4 +1,4 @@
-import { transliteration } from "../dist/index.js";
+import { transliteration } from "./dist/index.js";
 
 let MODE = "jp";
 

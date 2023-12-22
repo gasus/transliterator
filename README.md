@@ -4,7 +4,7 @@ https://github.com/gasus/transliterator
 
 # Demo
 
-
+https://gasus.github.io/transliterator/
 
 # Install
 
