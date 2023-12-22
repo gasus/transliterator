@@ -64,6 +64,12 @@ select:focus-visible,
 }
 
 @media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #00ff08;
+  }
+
   .select-wrapper,
   .button-wrapper {
     width: 100%;
