@@ -1,0 +1,22 @@
+{
+  "name": "@gasu/transliterator",
+  "version": "1.0.3",
+  "description": "ru transliterator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "transliterator"
+  ],
+  "author": "gasu",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
